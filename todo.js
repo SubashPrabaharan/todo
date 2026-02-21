@@ -1,20 +1,29 @@
 const addBtn =  document.getElementById('addTask');
 const taskList = document.getElementById('taskList');
 const completedTask = document.getElementById('completedTask');
-//const compTask = document.getElementById('completedTaskSelect');
+const completedTaskList = document.getElementById('completedTaskList');
+
 
 addBtn.addEventListener('click',function(){
 
-    const taskContainer  = document.createElement('div');
+    const taskContainer = document.createElement('div');
     const task = document.createElement('textarea');
     task.style.backgroundColor = color();
-   const complete =  document.createElement('button'); 
+   const complete =  document.createElement('button');
+    complete.style.display = "none"; 
     complete.textContent = "Complete";    
+    complete.style.backgroundColor = "green";
+    complete.style.color = "white";
+
+    task.addEventListener('click',function(){
+        complete.style.display = "block";
+        complete.style.marginTop = "20px";        
+    });
 
      complete.addEventListener('click',function(){
 
-
-        completedTask.prepend(taskContainer);
+ 
+        completedTaskList.prepend(taskContainer);
         complete.remove();
 
         // const opt = document.createElement(`option`);
