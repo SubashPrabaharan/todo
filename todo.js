@@ -1,7 +1,7 @@
 const addBtn =  document.getElementById('addTask');
 const taskList = document.getElementById('taskList');
 const completedTask = document.getElementById('completedTask');
-const compTask = document.getElementById('completedTaskSelect');
+//const compTask = document.getElementById('completedTaskSelect');
 
 addBtn.addEventListener('click',function(){
 
@@ -13,12 +13,16 @@ addBtn.addEventListener('click',function(){
 
      complete.addEventListener('click',function(){
 
-        const opt = document.createElement(`option`);
-        opt.textContent = task.value;
-        opt.value = task.value;
 
-        compTask.appendChild(opt);
-        taskContainer.remove();
+        completedTask.prepend(taskContainer);
+        complete.remove();
+
+        // const opt = document.createElement(`option`);
+        // opt.textContent = task.value;
+        // opt.value = task.value;
+        // console.log(opt);
+        // compTask.appendChild(opt);
+        // taskContainer.remove();
       //  task.appendChild(opt);
      })
 

@@ -30,12 +30,12 @@ body{
     flex-direction:column;
     align-items: left;
 }
- /* .completed-task{
+  .completed-task{
     margin-left: 500px;
     display: flex;
     flex-direction:column;
     align-items: left;
-}  */
+}  
 
 
     
