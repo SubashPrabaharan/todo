@@ -1,23 +1,24 @@
 textarea {
     width: 10vw;
-    height: 10vh;
-    max-width: 400px;
+    height: 15vh;
+    /* max-width: 400px; */
     padding: 12px;
     border: none;
     border-radius: 12px;
     /* background-color: #f5f5f5; */
-    box-shadow: 5px 5px 5px 5px ;
+     box-shadow: 2px 2px 2px 2px black; 
     font-size: 16px;
      font-family: 'Dancing Script', cursive;
      margin-top: 30px;
      margin-left: 30px;
-     /* color:white ; */
+      color:white ; 
      cursor: pointer;
 }
 
 body{
     font-family: 'Dancing Script', cursive;
-    background-color: wheat;
+    background-color: rgba(41, 91, 157, 0.616);
+    color:white;
 }
 .all-tasks {
     display: flex;
@@ -35,6 +36,7 @@ body{
     display: flex;
     flex-direction: column;
      min-width: 700px; 
+     margin-top: 20px;
 }
 /* .task-order:hover button{
     display: block;
