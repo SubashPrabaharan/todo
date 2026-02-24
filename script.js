@@ -8,7 +8,7 @@ addBtn.addEventListener('click',function(){
 
     const taskContainer = document.createElement('div');
     const task = document.createElement('textarea');
-    task.style.backgroundColor = color();
+    // task.style.backgroundColor = color();
     task.style.outline = "none";
    const complete =  document.createElement('button');
    const close = document.createElement('button');
@@ -32,6 +32,7 @@ addBtn.addEventListener('click',function(){
     document.addEventListener('click',function(){
         complete.style.display = "none";
         close.style.display = "none";
+        
     })
 
      complete.addEventListener('click',function(){
@@ -79,12 +80,12 @@ addBtn.addEventListener('click',function(){
 //  complete.textContent = "Complete";
 //  task.appendChild(taskList);
 
-const hex =  [0,1,2,3,4,5,6,7,8,9,`A`,`B`,`C`,`D`,`E`,`F`];
+// const hex =  [0,1,2,3,4,5,6,7,8,9,`A`,`B`,`C`,`D`,`E`,`F`];
 
-function color(){
-    let color = '#';
-    for(let i=0;i<6;i++){
-        color += hex[Math.floor(Math.random()*hex.length)];
-    }
-    return color;
-}
+// function color(){
+//     let color = '#';
+//     for(let i=0;i<6;i++){
+//         color += hex[Math.floor(Math.random()*hex.length)];
+//     }
+//     return color;
+// }

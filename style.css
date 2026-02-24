@@ -5,10 +5,10 @@ textarea {
     padding: 12px;
     border: none;
     border-radius: 12px;
-    /* background-color: #f5f5f5; */
+    background-color: #e05c1a;
      box-shadow: 2px 2px 2px 2px black; 
     font-size: 16px;
-     font-family: 'Dancing Script', cursive;
+     font-family: Arial, Helvetica, sans-serif;
      margin-top: 30px;
      margin-left: 30px;
       color:white ; 
@@ -16,9 +16,9 @@ textarea {
 }
 
 body{
-    font-family: 'Dancing Script', cursive;
-    background-color: rgba(41, 91, 157, 0.616);
-    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color:#e05c1a;
 }
 .all-tasks {
     display: flex;
